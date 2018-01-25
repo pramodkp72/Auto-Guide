@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome {{ name }}</title>
+    <script>
+    var details = {{ details }}
+    var val = {{ val }}
+</script>
+</head>
+
+
+<body>
+<form action="{{url_for('profile')}}" method="post">
+    <input type="text" name="projectFilepath">
+    Input : {{ val }}
+    <input type="submit">
+     Car Details : {{details}} <br>
+</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome {{ name }}</title>
+    <script>
+    var details = {{ details }}
+    var val = {{ val }}
+</script>
+</head>
+
+
+<body>
+<form action="{{url_for('generalSpecs')}}" method="post">
+    Manufacturer Name : <input type="text" name="mfrName"> <br>
+    Model : <input type="text" name="modelName"> <br>
+    Year : <input type="text" name="year"> <br>
+    Input : {{ val }}
+    <input type="submit">
+     Car Details : {{details}} <br>
+</form>
+</body>
+</html>
